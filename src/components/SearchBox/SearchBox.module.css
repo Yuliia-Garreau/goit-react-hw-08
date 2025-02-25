@@ -1,0 +1,16 @@
+.p {
+  font-size: 16px;
+  text-align: left;
+  color: black;
+}
+.input {
+  display: flex;
+  width: 224px;
+  padding: 2px;
+  border: 1px solid black;
+}
+.div {
+  margin-bottom: 30px;
+  padding: 0;
+  width: 220px;
+}

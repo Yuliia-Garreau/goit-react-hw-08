@@ -1,0 +1,41 @@
+.contact {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: black;
+}
+.name {
+  font-size: 14px;
+  align-items: left;
+  text-align: left;
+  /* margin-left: 10px; */
+}
+.number {
+  font-size: 14px;
+  align-items: left;
+  text-align: left;
+}
+.button {
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 22px;
+  justify-content: center;
+}
+.my-icon {
+  margin: 20px;
+  padding: 5px;
+}
