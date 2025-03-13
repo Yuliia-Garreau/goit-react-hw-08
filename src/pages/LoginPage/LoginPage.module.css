@@ -1,10 +1,7 @@
 .div {
   margin-bottom: 30px;
-  margin-top: 50px;
-  /* margin: auto; */
-  margin-left: auto;
-  margin-right: auto;
   /* width: 230px; */
+  margin-top: 100px;
 }
 .formWrapper {
   display: flex;
@@ -14,10 +11,10 @@
   border-radius: 5px;
   padding: 10px;
   width: 315px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .label {
+  display: flex;
+  flex-direction: column;
   margin-top: 5px;
   margin-left: 0;
   font-size: 16px;
@@ -26,11 +23,16 @@
   color: rgb(168, 53, 53);
   font-weight: 600;
 }
+/* .input {
+  margin-bottom: 10px;
+  font-size: 12px;
+} */
 .input {
   margin-bottom: 10px;
-  font-size: 14px;
   height: 25px;
+  font-size: 14px;
   padding: 2px;
+
   background-color: rgb(250, 238, 238);
   /* border-color: rgb(168, 53, 53); */
   border: 1px solid rgb(168, 53, 53);
@@ -39,7 +41,16 @@
 .input:hover {
   border: 2px solid rgb(54, 32, 4);
 }
-
+/* .button {
+  border: 1px solid black;
+  width: 130px;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  font-size: 16px;
+} */
 .button {
   border: 1px solid rgb(168, 53, 53);
   width: 150px;
@@ -51,14 +62,19 @@
   font-size: 16px;
   color: rgb(168, 53, 53);
   font-weight: 600;
+  margin-bottom: 20px;
 }
 .button:hover {
   border: 2px solid rgb(54, 32, 4);
   background-color: rgb(250, 238, 238);
   color: rgb(168, 53, 53);
 }
-.error {
-  text-align: left;
+.text {
+  text-align: center;
+  font-size: 14px;
   color: rgb(168, 53, 53);
-  font-size: 12px;
+}
+.link {
+  color: rgb(54, 32, 4);
+  font-weight: 500;
 }

@@ -1,16 +1,28 @@
 .p {
   font-size: 16px;
   text-align: left;
-  color: black;
+  color: rgb(168, 53, 53);
+  font-weight: 600;
 }
 .input {
   display: flex;
   width: 224px;
   padding: 2px;
-  border: 1px solid black;
+  border: 1px solid rgb(168, 53, 53);
+  border-radius: 5px;
+  width: 335px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .div {
   margin-bottom: 30px;
   padding: 0;
-  width: 220px;
+  width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.input:hover {
+  border: 2px solid rgb(54, 32, 4);
+  background-color: rgb(250, 238, 238);
+  color: rgb(168, 53, 53);
 }

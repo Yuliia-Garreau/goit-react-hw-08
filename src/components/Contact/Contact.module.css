@@ -1,6 +1,6 @@
 .contact {
   display: flex;
-  border: 1px solid black;
+  border: 1px solid rgb(168, 53, 53);
   border-radius: 5px;
   align-items: center;
   justify-content: space-between;
@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  color: black;
+  color: rgb(168, 53, 53);
 }
 .name {
   font-size: 14px;
@@ -24,7 +24,7 @@
   text-align: left;
 }
 .button {
-  border: 1px solid black;
+  border: 1px solid rgb(168, 53, 53);
   border-radius: 5px;
   font-size: 14px;
   font-weight: 500;
@@ -34,6 +34,12 @@
   padding-bottom: 0;
   height: 22px;
   justify-content: center;
+  color: rgb(168, 53, 53);
+}
+.button:hover {
+  border: 2px solid rgb(54, 32, 4);
+  background-color: rgb(250, 238, 238);
+  color: rgb(168, 53, 53);
 }
 .my-icon {
   margin: 20px;

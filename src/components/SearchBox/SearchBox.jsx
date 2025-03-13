@@ -1,6 +1,6 @@
 import { useDispatch } from "react-redux";
 import s from "./SearchBox.module.css";
-import { changeFilter } from "../../redux/filtersSlice";
+import { changeFilter } from "../../redux/filters/filtersSlice";
 
 const SearchBox = () => {
   const dispatch = useDispatch();
@@ -12,6 +12,8 @@ const SearchBox = () => {
         // key={props.filter.id}
         type="text"
         name="search"
+        placeholder="Enter name"
+        style={{ color: "rgb(168, 53, 53)" }}
         // value={props.filter}
         onChange={(e) => {
           dispatch(changeFilter(e.target.value));
