@@ -18,14 +18,13 @@ import { refreshUser } from "./redux/auth/operations";
 import { selectIsRefreshing } from "./redux/auth/selectors";
 import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
+import RestrictedRoute from "./PublicRoute";
 
 function App() {
   const dispatch = useDispatch();
   const isRefreshing = useSelector(selectIsRefreshing);
   // const { items, isLoading, error } = useSelector((state) => state.contacts);
-  // useEffect(() => {
-  //   dispatch(fetchContacts());
-  // }, [dispatch]);
+
   useEffect(() => {
     dispatch(refreshUser());
   }, [dispatch]);
@@ -34,7 +33,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route
-          path="/phoneBook"
+          path="/contacts"
           element={
             <PrivateRoute>
               <ContactsPage />
@@ -53,14 +52,6 @@ function App() {
       <Route path="/register" element={<RegisterPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
-    // <div>
-    //   <Navigation />
-    //   {/* <h1>Phonebook</h1>
-
-    //   <ContactForm />
-    //   <SearchBox />
-    //   <ContactList /> */}
-    // </div>
   );
 }
 

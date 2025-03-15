@@ -4,7 +4,7 @@ const HomePage = () => {
   return (
     <div>
       <p>Welcome to my Phonebook</p>
-      <p>Instructions</p>
+      <p>Please register or/and login to use Phonebook</p>
     </div>
   );
 };
