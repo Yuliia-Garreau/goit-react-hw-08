@@ -12,17 +12,13 @@ h3 {
   font-weight: 800;
   text-decoration: none;
 }
-.nav {
+.navigation {
   display: flex;
   gap: 60px;
   font-weight: 900;
-  /* background-color: #619179; */
-  /* background: local; */
+
   padding: 40px;
-  /* text-align: end; */
   justify-content: flex-end;
-  /* background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shutterstock.com%2Fsearch%2Fblur-farm-background&psig=AOvVaw3RyTlc9cIvaUbsb6x3XuvK&ust=1741904582302000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMDh-rTKhYwDFQAAAAAdAAAAABAx"); */
-  /* background-size: auto; */
   background-position: center;
 }
 .link:hover {
@@ -38,12 +34,9 @@ h3 {
   width: 200px;
   padding: 0;
   padding-bottom: 5px;
-
-  /* display: flex; */
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 10px; */
   font-size: 30px;
   color: rgb(168, 53, 53);
   font-weight: 800;

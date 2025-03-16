@@ -9,8 +9,12 @@ const UserMenu = () => {
 
   return (
     <div className={css.container}>
-      <p className={css.text}>Welcome, {user.name}</p>
-      <button className={css.btn} onClick={() => dispatch(logoutThunk())}>
+      <p className={css.text}>Welcome, {user.name}!</p>
+      <button
+        className={css.btn}
+        type="button"
+        onClick={() => dispatch(logoutThunk())}
+      >
         Logout
       </button>
     </div>

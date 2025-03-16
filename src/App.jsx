@@ -32,24 +32,26 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage />} />
+
         <Route
           path="/contacts"
           element={
-            <PrivateRoute>
+            <PrivateRoute redirectTo="/">
               <ContactsPage />
             </PrivateRoute>
           }
         />
+        <Route
+          path="/login"
+          element={
+            <PublicRoute>
+              <LoginPage />
+            </PublicRoute>
+          }
+        />
+        <Route path="/register" redirectTo="/" element={<RegisterPage />} />
       </Route>
-      <Route
-        path="/login"
-        element={
-          <PublicRoute>
-            <LoginPage />
-          </PublicRoute>
-        }
-      />
-      <Route path="/register" element={<RegisterPage />} />
+
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

@@ -22,7 +22,7 @@ const persistConfig = {
   whitelist: ["token"],
 };
 // const stage = import.meta.env.MODE;
-const persistedReducer = persistReducer(persistConfig, authReducer);
+// const persistedReducer = persistReducer(persistConfig, authReducer);
 // export const store = configureStore({
 //   reducer: {
 //     contacts: contactsReducer,
@@ -41,7 +41,7 @@ export const store = configureStore({
   reducer: {
     contacts: contactsReducer,
     filters: filtersReducer,
-    auth: persistedReducer,
+    auth: persistReducer(persistConfig, authReducer),
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
