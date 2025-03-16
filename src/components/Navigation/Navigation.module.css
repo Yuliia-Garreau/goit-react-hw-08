@@ -14,7 +14,7 @@ h3 {
 }
 .navigation {
   display: flex;
-  gap: 60px;
+  gap: 300px;
   font-weight: 900;
 
   padding: 40px;
